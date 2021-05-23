@@ -20,6 +20,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ## Overview
 
+- [Live Demo](https://sagarnaik12.github.io/stats-preview-card-component/) 
+
 ### The challenge
 
 Users should be able to:
