@@ -12,6 +12,11 @@ $tint-w: #58566d;
 
 // font-family: 'Inter', sans-serif;
 // font-family: 'Lexend Deca', sans-serif;
+
+:root {
+  font-size: 16px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -34,6 +39,7 @@ body {
   text-align: center;
   color: $white;
 }
+
 .attribution a {
   color: $secondary;
 }
@@ -80,12 +86,12 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  // align-items: left;
   gap: 2rem;
   padding: 3rem;
 
   .heading {
-    font-size: 25px;
+    font-size: 2em;
     font-weight: bold;
     color: $white;
     line-height: 1.5;
@@ -98,18 +104,19 @@ body {
 
   .sub-text {
     color: $tint-w;
-    font-size: 12px;
+    font-size: 1em;
+    margin-bottom: 1.7rem;
   }
 
   .stats-w {
     display: flex;
     gap: 2rem;
-    font-size: 15px;
     font-family: "Inter", sans-serif;
+
     .stats-c {
       //   text-align: center;
       .stats {
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: bold;
         color: $white;
         margin-bottom: 0.3em;
@@ -117,7 +124,7 @@ body {
 
       .stats-l {
         color: $tint-w;
-        font-size: 0.7em;
+        font-size: 0.8em;
         text-transform: uppercase;
       }
     }
@@ -136,6 +143,7 @@ body {
     width: 100%;
     height: 100%;
   }
+
   .wrapper {
     flex-direction: column-reverse;
     margin: 2rem;
@@ -148,25 +156,41 @@ body {
       img {
         border-radius: 10px 10px 0 0;
       }
+    }
 
-      .content {
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        align-content: center;
-      }
+    .content {
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      align-content: center;
 
       .heading,
       .sub-text {
         text-align: center;
       }
+
+      .heading {
+        font-size: 1.6em;
+      }
+      .sub-text {
+        font-size: 0.8em;
+        margin-bottom: 0.3rem;
+      }
+
       .stats-w {
         flex-direction: column;
         margin-top: 1rem;
 
         .stats-c {
           text-align: center;
+
+          .stats {
+            font-size: 1.2em;
+          }
+          .stats-l {
+            font-size: 0.7em;
+          }
         }
       }
     }

@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+:root {
+  font-size: 16px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -67,12 +71,11 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: left;
   gap: 2rem;
   padding: 3rem;
 }
 .content .heading {
-  font-size: 25px;
+  font-size: 2em;
   font-weight: bold;
   color: #fff;
   line-height: 1.5;
@@ -83,23 +86,23 @@ body {
 }
 .content .sub-text {
   color: #58566d;
-  font-size: 12px;
+  font-size: 1em;
+  margin-bottom: 1.7rem;
 }
 .content .stats-w {
   display: flex;
   gap: 2rem;
-  font-size: 15px;
   font-family: "Inter", sans-serif;
 }
 .content .stats-w .stats-c .stats {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
   color: #fff;
   margin-bottom: 0.3em;
 }
 .content .stats-w .stats-c .stats-l {
   color: #58566d;
-  font-size: 0.7em;
+  font-size: 0.8em;
   text-transform: uppercase;
 }
 
@@ -119,23 +122,36 @@ body {
   .wrapper .image img {
     border-radius: 10px 10px 0 0;
   }
-  .wrapper .image .content {
+  .wrapper .content {
     gap: 1rem;
     justify-content: center;
     align-items: center;
     align-self: center;
     align-content: center;
   }
-  .wrapper .image .heading,
-.wrapper .image .sub-text {
+  .wrapper .content .heading,
+.wrapper .content .sub-text {
     text-align: center;
   }
-  .wrapper .image .stats-w {
+  .wrapper .content .heading {
+    font-size: 1.6em;
+  }
+  .wrapper .content .sub-text {
+    font-size: 0.8em;
+    margin-bottom: 0.3rem;
+  }
+  .wrapper .content .stats-w {
     flex-direction: column;
     margin-top: 1rem;
   }
-  .wrapper .image .stats-w .stats-c {
+  .wrapper .content .stats-w .stats-c {
     text-align: center;
+  }
+  .wrapper .content .stats-w .stats-c .stats {
+    font-size: 1.2em;
+  }
+  .wrapper .content .stats-w .stats-c .stats-l {
+    font-size: 0.7em;
   }
 }
 @media only screen and (min-width: 1150px) {
